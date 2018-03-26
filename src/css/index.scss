@@ -11,6 +11,14 @@ header {
     color: white;
 }
 
+.block {
+    display: inline-grid;
+    min-height: 25rem;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
 @media (min-width: 500px) { // Desktop
     .block-container {
         display: grid;
@@ -21,20 +29,7 @@ header {
         padding: 4rem  4rem 0;
     }
 
-    .block-single {
-        display: inline-grid;
-        min-height: 25rem;
-        text-align: center;
-        padding-top: 2rem;
-        color: white;
-    }
-
-    .block-double {
-        display: inline-grid;
-        min-height: 25rem;
-        text-align: center;
-        padding-top: 2rem;
-        color: white;
+    .block--double {
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -55,15 +50,7 @@ header {
         margin: auto auto 0;
     }
 
-    .block-single {
-        display: inline-grid;
-        min-height: 25rem;
-        text-align: center;
-        padding-top: 2rem;
-        color: white;
-    }
-
-    .block-double {
+    .block--double {
         display: inline-grid;
         min-height: 25rem;
         text-align: center;
@@ -82,4 +69,16 @@ header {
 
 .block--recipe {
     background-color: lightcoral;
+}
+
+.block__header {
+    font-size: 2rem;
+}
+
+.block__copy {
+    font-size: 1.5rem;
+}
+
+.block_link {
+    font-size: 1.5rem;
 }
