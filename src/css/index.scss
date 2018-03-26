@@ -1,23 +1,29 @@
 /* Style */
 header {
     text-align: center;
+    padding: 15rem 0;
 } 
 
-@media (min-width: 500px) {
-    h1 {
-        color: blue;
-    }
+.footer-text {
+    margin: 0;
+    padding: 2rem;
+    background-color: darkblue;
+    color: white;
+}
+
+@media (min-width: 500px) { // Desktop
     .grid-container {
         display: grid;
         grid-template-columns: auto auto;
         grid-auto-rows: minmax(300px, auto);
         max-width: 1200px;
-        margin: auto;
+        margin: auto auto 0;
+        padding: 4rem  4rem 0;
     }
 
     .single-item {
         display: inline-grid;
-        min-height: 50px;
+        min-height: 25rem;
         text-align: center;
         padding-top: 2rem;
         color: white;
@@ -25,16 +31,20 @@ header {
 
     .double-item {
         display: inline-grid;
-        min-height: 50px;
+        min-height: 25rem;
         text-align: center;
         padding-top: 2rem;
         color: white;
         grid-column-start: 1;
         grid-column-end: 3;
     }
+
+    .footer-style {
+        padding: 0 4rem;
+    }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 499px) { // Mobile
     h1 {
         color: red;
     }
@@ -42,12 +52,12 @@ header {
         display: grid;
         grid-template-columns: auto;
         grid-auto-rows: minmax(300px, auto);
-        margin: auto;
+        margin: auto auto 0;
     }
 
     .single-item {
         display: inline-grid;
-        min-height: 50px;
+        min-height: 25rem;
         text-align: center;
         padding-top: 2rem;
         color: white;
@@ -55,11 +65,12 @@ header {
 
     .double-item {
         display: inline-grid;
-        min-height: 50px;
+        min-height: 25rem;
         text-align: center;
         padding-top: 2rem;
         color: white;
     }
+
 }
 
 .simon-item {
