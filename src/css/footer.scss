@@ -1,0 +1,14 @@
+@media (min-width: 500px) { // Desktop
+    .footer-style {
+        padding: 0 4rem;
+    }
+}
+
+.footer-text {
+    margin: 0;
+    padding: 2rem;
+    background-color: darkblue;
+    font-family: $base-font;
+    font-size: $small-font;
+    color: white;
+}

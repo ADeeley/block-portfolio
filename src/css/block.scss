@@ -1,0 +1,70 @@
+.block {
+    display: inline-grid;
+    padding: 2rem;
+    min-height: 25rem;
+    text-align: center;
+    color: white;
+}
+
+.block__header {
+    font-family: $serif-font;
+    font-size: $large-font;
+    font-style: normal;
+}
+
+.block__copy {
+    font-family: $base-font;
+    font-size: $medium-font;
+    font-style: normal;
+}
+
+.block__link {
+    font-family: $base-font;
+    font-size: $small-font;
+    font-style: normal;
+}
+
+.block--simon {
+    background-color: slateblue;
+}
+
+.block--twitch {
+    background-color:grey;
+}
+
+.block--recipe {
+    background-color: lightcoral;
+}
+@media (min-width: 500px) { // Desktop
+    .block-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-auto-rows: minmax(300px, auto);
+        max-width: 1200px;
+        margin: auto auto 0;
+        padding: 4rem  4rem 0;
+    }
+
+    .block--double {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+
+@media (max-width: 499px) { // Mobile
+    .block-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: minmax(300px, auto);
+        margin: auto auto 0;
+    }
+
+    .block--double {
+        display: inline-grid;
+        min-height: 25rem;
+        text-align: center;
+        padding-top: 2rem;
+        color: white;
+    }
+}
