@@ -1,24 +1,62 @@
 /* Style */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto');
+
+body {
+    margin: 0;
+}
+
 header {
     text-align: center;
     padding: 15rem 0;
+    font-family: 'Libre Baskerville', serif;
 } 
 
-.footer-text {
-    margin: 0;
-    padding: 2rem;
-    background-color: darkblue;
-    color: white;
+/********************** Section ************************/
+
+.section-title {
+    display: inline-block;
+    margin-left: 1em;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
 }
+
+/********************** Block ************************/
 
 .block {
     display: inline-grid;
+    padding: 2rem;
     min-height: 25rem;
     text-align: center;
-    padding: 2rem;
     color: white;
 }
 
+.block__header {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.block__copy {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.block__link {
+    font-size: 1.5rem;
+}
+
+.block--simon {
+    background-color: slateblue;
+}
+
+.block--twitch {
+    background-color:grey;
+}
+
+.block--recipe {
+    background-color: lightcoral;
+}
 @media (min-width: 500px) { // Desktop
     .block-container {
         display: grid;
@@ -33,16 +71,10 @@ header {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-
-    .footer-style {
-        padding: 0 4rem;
-    }
 }
 
+
 @media (max-width: 499px) { // Mobile
-    h1 {
-        color: red;
-    }
     .block-container {
         display: grid;
         grid-template-columns: auto;
@@ -59,26 +91,17 @@ header {
     }
 }
 
-.block--simon {
-    background-color: slateblue;
+/********************** Footer ************************/
+
+@media (min-width: 500px) { // Desktop
+    .footer-style {
+        padding: 0 4rem;
+    }
 }
 
-.block--twitch {
-    background-color:grey;
-}
-
-.block--recipe {
-    background-color: lightcoral;
-}
-
-.block__header {
-    font-size: 2rem;
-}
-
-.block__copy {
-    font-size: 1.5rem;
-}
-
-.block_link {
-    font-size: 1.5rem;
+.footer-text {
+    margin: 0;
+    padding: 2rem;
+    background-color: darkblue;
+    color: white;
 }
