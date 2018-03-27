@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto');
+@import '../partials/partial.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/footer/footer.scss';
+@import '../blocks/block/block.scss';
+@import '../blocks/section/section.scss';
+
+html {
+    font-size: 12px;
+}
+body {
+    margin: 0;
+}

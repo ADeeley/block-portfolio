@@ -1,2 +1,2 @@
 'use strict';
-import '../css/index.scss';
+import '../css/main/index.scss';
