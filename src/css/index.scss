@@ -1,6 +1,7 @@
 /* Style */
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto');
+@import 'partial.scss';
 
 body {
     margin: 0;
@@ -9,7 +10,7 @@ body {
 header {
     text-align: center;
     padding: 15rem 0;
-    font-family: 'Libre Baskerville', serif;
+    font-family: $serif-font;
 } 
 
 /********************** Section ************************/
@@ -17,8 +18,8 @@ header {
 .section-title {
     display: inline-block;
     margin-left: 1em;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 2rem;
+    font-family: $serif-font;
+    font-size: $large-font;
 }
 
 /********************** Block ************************/
@@ -32,18 +33,21 @@ header {
 }
 
 .block__header {
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: $serif-font;
+    font-size: $large-font;
     font-style: normal;
-    font-size: 2rem;
 }
 
 .block__copy {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: $base-font;
+    font-size: $medium-font;
     font-style: normal;
 }
+
 .block__link {
-    font-size: 1.5rem;
+    font-family: $base-font;
+    font-size: $small-font;
+    font-style: normal;
 }
 
 .block--simon {
@@ -103,5 +107,7 @@ header {
     margin: 0;
     padding: 2rem;
     background-color: darkblue;
+    font-family: $base-font;
+    font-size: $small-font;
     color: white;
 }
