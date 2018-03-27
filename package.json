@@ -21,7 +21,9 @@
     "url": "https://github.com/ADeeley/vanilla_skeleton/issues"
   },
   "homepage": "https://github.com/ADeeley/vanilla_skeleton#readme",
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
   "devDependencies": {
     "css-loader": "^0.28.11",
     "eslint": "^4.13.1",
