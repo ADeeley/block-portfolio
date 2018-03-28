@@ -19,9 +19,11 @@
 }
 
 .block__link {
+    height: 0%;
     font-family: $base-font;
     font-size: $small-font;
     font-style: normal;
+    background-color: black;
 }
 
 .block--simon {

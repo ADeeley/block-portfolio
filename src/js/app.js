@@ -1,6 +1,6 @@
 'use strict';
 import '../css/main/index.scss';
 import 'normalize.css';
-import {addHoverListener} from './block-animation';
+import {addListeners} from './block-animation';
 
-window.onload = addHoverListener;
+window.onload = addListeners;
