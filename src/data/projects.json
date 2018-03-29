@@ -1,0 +1,18 @@
+{
+    "projects": [{
+        "title": "Project 1",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lectus quam.",
+        "link": "https://github.com/ADeeley/Twitch_hub",
+        "image": "maze.twitch_hub_icon.png"
+    }, {
+        "title": "Project 2",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lectus quam.",
+        "link": "https://github.com/ADeeley/Twitch_hub",
+        "image": "maze.twitch_hub_icon.png"
+    }, {
+        "title": "Project 3",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lectus quam.",
+        "link": "https://github.com/ADeeley/Twitch_hub",
+        "image": "maze.twitch_hub_icon.png"
+    }]
+}
