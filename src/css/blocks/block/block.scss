@@ -17,6 +17,7 @@
 
 .block__copy {
     display: flex;
+    text-align: left;
     flex-grow: 2;
     font-family: $base-font;
     font-size: $medium-font;
@@ -48,12 +49,13 @@
 .block--recipe {
     background-color: lightcoral;
 }
-@media (min-width: 500px) { // Desktop
+
+@media (min-width: 992px) { // Desktop
     .block-container {
         display: grid;
         grid-template-columns: auto auto;
         grid-auto-rows: minmax(300px, auto);
-        max-width: 1200px;
+        max-width: 1000px;
         margin: auto auto 0;
         padding: 4rem  4rem 0;
     }
@@ -64,7 +66,22 @@
     }
 }
 
-@media (max-width: 499px) { // Mobile
+@media (min-width: 600px) { // Desktop
+    .block-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-auto-rows: minmax(300px, auto);
+        margin: auto auto 0;
+        padding: 4rem  4rem 0;
+    }
+
+    .block--double {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (max-width: 600px) { // Mobile
     .block-container {
         display: grid;
         grid-template-columns: auto;
