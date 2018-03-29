@@ -1,7 +1,7 @@
 'use strict';
 import '../css/main/index.scss';
 import 'normalize.css';
-import {addListeners} from './block-animation';
+// import {addListeners} from './block-animation';
 import data from '../data/projects.json';
 
 console.log(data);
@@ -12,6 +12,9 @@ window.onload = () => {
         let project = projects[i];
         let block = document.createElement('div');
             block.classList = 'block block--simon';
+            if ((i + 1) % 3 === 0) {
+                block.classList += ' block--double';
+            }
         let header = document.createElement('h4');
             header.classList = 'block__header';
             header.innerHTML = project['title'];
