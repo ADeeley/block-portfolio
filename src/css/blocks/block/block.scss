@@ -1,4 +1,6 @@
 .block {
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     min-height: 25rem;
     text-align: center;
@@ -6,23 +8,33 @@
 }
 
 .block__header {
+    display: flex;
+    flex-grow: 1;
     font-family: $serif-font;
     font-size: $large-font;
     font-style: normal;
 }
 
 .block__copy {
+    display: flex;
+    flex-grow: 2;
     font-family: $base-font;
     font-size: $medium-font;
     font-style: normal;
 }
 
-.block__link {
-    height: 0%;
+.block__button {
+    display: flex;
+    flex-grow: 1;
+    max-height: 50px;
+    background-color: none;
+    width: 200px;
+    border: none;
+    color: white;
+    padding: 20px;
     font-family: $base-font;
     font-size: $small-font;
     font-style: normal;
-    background-color: black;
 }
 
 .block--simon {
@@ -61,7 +73,7 @@
     }
 
     .block--double {
-        display: inline-grid;
+        display: flex;
         min-height: 25rem;
         text-align: center;
         padding-top: 2rem;
