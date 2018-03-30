@@ -3,6 +3,7 @@ import '../css/main/index.scss';
 import 'normalize.css';
 // import {addListeners} from './block-animation';
 import data from '../data/projects.json';
+import createNewElement from './utilities';
 
 console.log(data);
 window.onload = () => {
@@ -15,24 +16,24 @@ window.onload = () => {
             if ((i + 1) % 3 === 0) {
                 block.classList += ' block--double';
             }
-        let header = document.createElement('h4');
-            header.classList = 'block__header';
-            header.innerHTML = project['title'];
-        let copy = document.createElement('p');
-            copy.classList = 'block__copy';
-            copy.innerHTML = project['copy'];
-        let button = document.createElement('button');
-            button.classList = 'btn';
-            button.href = project['link'];
-            button.innerHTML = 'Link to project';
+        let header = createNewElement('h4', {
+            'classList': 'block__header',
+            'innerHTML': project['title'],
+        });
+        let copy = createNewElement('p', {
+            'classList': 'block__copy',
+            'innerHTML': project['copy'],
+        });
+        let button = createNewElement('button', {
+            'classList': 'btn',
+            'href': project['link'],
+            'innerHTML': 'Link to project',
+        });
+        let image = (project['image']) ? createNewElement('img', {
+            'src': 'img/' + project['image'],
+            'classList': 'block__image',
+        }) : null;
 
-        let image = (project['image']) ? (() => {
-            let temp = document.createElement('img');
-                temp.src = 'img/' + project['image'];
-                temp.classList = 'block__image';
-            return temp;
-        })() : '';
-        console.log(typeof image);
         block.appendChild(header);
         block.appendChild(copy);
         if (image) {
