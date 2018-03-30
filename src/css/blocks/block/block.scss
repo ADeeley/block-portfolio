@@ -4,7 +4,7 @@
     padding: 2rem;
     min-height: 25rem;
     text-align: center;
-    color: white;
+    color: $text-light;
 }
 
 .block__header {
@@ -22,20 +22,22 @@
     font-family: $base-font;
     font-size: $medium-font;
     font-style: normal;
+    color: $text-light;
 }
 
 
-.block--slateblue {
-    background-color: #b5d99c;
+.block--primary {
+    background-color: $primary-colour;
 }
 
-.block-- {
-    background-color:grey;
+.block--secondary {
+    background-color: $secondary-colour;
 }
 
-.block--recipe {
-    background-color: lightcoral;
+.block--tertiary {
+    background-color: $tertiary-colour;
 }
+
 @media (min-width: 500px) { // Desktop
     .block-container {
         display: grid;

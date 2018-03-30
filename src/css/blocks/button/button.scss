@@ -7,17 +7,17 @@
     padding: 15px;
     font-family: $base-font;
     font-size: $medium-font;
-    background-color:white;
-    color: black;
+    background-color: $secondary-colour;
+    color: $text-light;
     font-style: normal;
 }
 
 .btn:hover {
-    background-color: black;
-    color: white;
+    background-color: $tertiary-colour;
+    color: $text-dark;
 }
 
 .btn:active {
     background-color: white;
-    color: black;
+    color: $text-dark;
 }
