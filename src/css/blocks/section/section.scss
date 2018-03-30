@@ -1,7 +1,14 @@
 .section-title {
     display: inline-block;
-    margin-left: 1em;
     font-family: $serif-font;
-    font-size: $large-font;
+    font-size: $display-font;
     color: $text-dark;
+}
+@media (min-width: 500px) { // Desktop
+    margin: auto auto 0;
+    padding: 4rem  4rem 0;
+}
+@media (max-width: 499px) { // Mobile
+    margin: auto auto 0;
+    padding: 4rem  4rem 0;
 }
