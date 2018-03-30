@@ -17,45 +17,31 @@
 
 .block__copy {
     display: flex;
-    text-align: left;
     flex-grow: 2;
+    text-align: left;
     font-family: $base-font;
     font-size: $medium-font;
     font-style: normal;
 }
 
-.block__button {
-    display: flex;
-    flex-grow: 1;
-    max-height: 50px;
-    background-color: none;
-    width: 200px;
-    border: none;
-    color: white;
-    padding: 20px;
-    font-family: $base-font;
-    font-size: $small-font;
-    font-style: normal;
+
+.block--slateblue {
+    background-color: #b5d99c;
 }
 
-.block--simon {
-    background-color: slateblue;
-}
-
-.block--twitch {
-    background-color: red;
+.block-- {
+    background-color:grey;
 }
 
 .block--recipe {
     background-color: lightcoral;
 }
-
-@media (min-width: 992px) { // Desktop
+@media (min-width: 500px) { // Desktop
     .block-container {
         display: grid;
         grid-template-columns: auto auto;
         grid-auto-rows: minmax(300px, auto);
-        max-width: 1000px;
+        max-width: 1200px;
         margin: auto auto 0;
         padding: 4rem  4rem 0;
     }
@@ -66,22 +52,7 @@
     }
 }
 
-@media (min-width: 600px) { // Desktop
-    .block-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-auto-rows: minmax(300px, auto);
-        margin: auto auto 0;
-        padding: 4rem  4rem 0;
-    }
-
-    .block--double {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-}
-
-@media (max-width: 600px) { // Mobile
+@media (max-width: 499px) { // Mobile
     .block-container {
         display: grid;
         grid-template-columns: auto;

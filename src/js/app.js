@@ -11,7 +11,7 @@ window.onload = () => {
     for (let i = 0; i < projects.length; i++) {
         let project = projects[i];
         let block = document.createElement('div');
-            block.classList = 'block block--simon';
+            block.classList = 'block block--slateblue';
             if ((i + 1) % 3 === 0) {
                 block.classList += ' block--double';
             }
