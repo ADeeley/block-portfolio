@@ -13,10 +13,12 @@
     font-family: $serif-font;
     font-size: $large-font;
     font-style: normal;
+    margin-bottom: 0;
 }
 
 .block__copy {
     display: flex;
+    align-self: flex-start;
     flex-grow: 2;
     text-align: left;
     font-family: $base-font;
@@ -25,6 +27,13 @@
     color: $text-light;
 }
 
+.block__image {
+    display: flex;
+    align-self: flex-end;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+}
 
 .block--primary {
     background-color: $primary-colour;

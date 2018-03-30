@@ -3,26 +3,26 @@
         "title": "Recipe Book",
         "copy": "Store your recipies online with this React app.",
         "link": "https://github.com/ADeeley/Twitch_hub",
-        "image": "twitch_hub_icon.png"
+        "image": ""
     }, {
         "title": "Twitch Hub",
         "copy": "Keeps track of your twitch subscriptions and see who is currently streaming.",
         "link": "https://github.com/ADeeley/Twitch_hub",
-        "image": "twitch_hub_icon.png"
+        "image": "twitch_hub_logo.png"
     }, {
         "title": "Simon Game",
         "copy": "The classic Simon Says game in your browser!",
         "link": "https://github.com/ADeeley/Twitch_hub",
-        "image": "maze.twitch_hub_icon.png"
+        "image": ""
     }, {
         "title": "Tic Tac Toe",
         "copy": "Challenge your friends, settle a bet, or even play for fun with Tic Tac Toe.",
         "link": "https://github.com/ADeeley/Twitch_hub",
-        "image": "maze.twitch_hub_icon.png"
+        "image": ""
     }, {
         "title": "The Fisherman",
         "copy": "Collect as many fish as you can, whilst avoiding the dangerous red fish.",
         "link": "https://github.com/ADeeley/Twitch_hub",
-        "image": "maze.twitch_hub_icon.png"
+        "image": ""
     }]
 }

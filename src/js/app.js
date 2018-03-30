@@ -25,10 +25,19 @@ window.onload = () => {
             button.classList = 'btn';
             button.href = project['link'];
             button.innerHTML = 'Link to project';
-    
 
+        let image = (project['image']) ? (() => {
+            let temp = document.createElement('img');
+                temp.src = 'img/' + project['image'];
+                temp.classList = 'block__image';
+            return temp;
+        })() : '';
+        console.log(typeof image);
         block.appendChild(header);
         block.appendChild(copy);
+        if (image) {
+            block.appendChild(image);
+        };
         block.appendChild(button);
         container.appendChild(block);
     }
