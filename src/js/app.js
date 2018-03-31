@@ -5,41 +5,59 @@ import 'normalize.css';
 import data from '../data/projects.json';
 import createNewElement from './utilities';
 
-console.log(data);
-window.onload = () => {
+/**
+ * @param {*} project 
+ * @param {*} isDouble 
+ */
+function createAllElements(project, i) {
+    let els = {};
+    let isDouble = ((i + 1) % 3 === 0) ? ' block--double' : '';
+
+    els.block = createNewElement('div', {
+        'classList': 'block block--primary' + isDouble,
+    });
+    els.header = createNewElement('h4', {
+        'classList': 'block__header',
+        'innerHTML': project['title'],
+    });
+    els.copy = createNewElement('p', {
+        'classList': 'block__copy',
+        'innerHTML': project['copy'],
+    });
+    els.button = createNewElement('button', {
+        'classList': 'btn',
+        'href': project['link'],
+        'innerHTML': 'Link to project',
+    });
+    els.image = (project['image']) ? createNewElement('img', {
+        'src': 'img/' + project['image'],
+        'classList': 'block__image',
+    }) : null;
+
+    return els;
+};
+
+/**
+ * @param {*} els 
+ */
+function appendElements(els) {
     const container = document.getElementById('projects_container');
+    const block = els.block;
+
+    block.appendChild(els.header);
+    block.appendChild(els.copy);
+    if (els.image) {
+        block.appendChild(els.image);
+    };
+    block.appendChild(els.button);
+    container.appendChild(els.block);
+}
+
+function init() {
     const projects = data['projects'];
     for (let i = 0; i < projects.length; i++) {
-        let project = projects[i];
-        let block = document.createElement('div');
-            block.classList = 'block block--primary';
-            if ((i + 1) % 3 === 0) {
-                block.classList += ' block--double';
-            }
-        let header = createNewElement('h4', {
-            'classList': 'block__header',
-            'innerHTML': project['title'],
-        });
-        let copy = createNewElement('p', {
-            'classList': 'block__copy',
-            'innerHTML': project['copy'],
-        });
-        let button = createNewElement('button', {
-            'classList': 'btn',
-            'href': project['link'],
-            'innerHTML': 'Link to project',
-        });
-        let image = (project['image']) ? createNewElement('img', {
-            'src': 'img/' + project['image'],
-            'classList': 'block__image',
-        }) : null;
-
-        block.appendChild(header);
-        block.appendChild(copy);
-        if (image) {
-            block.appendChild(image);
-        };
-        block.appendChild(button);
-        container.appendChild(block);
+        appendElements(createAllElements(projects[i], i));
     }
-};
+}
+
+window.onload = init;

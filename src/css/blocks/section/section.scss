@@ -1,14 +1,22 @@
-.section-title {
+.section-container {
+    max-width: 1000px;
+    margin: auto auto 0;
+    padding: 0 4rem 3rem;
+}
+
+.section-container__title {
     display: inline-block;
     font-family: $serif-font;
     font-size: $display-font;
     color: $text-dark;
 }
 @media (min-width: 500px) { // Desktop
-    margin: auto auto 0;
-    padding: 4rem  4rem 0;
+    .section-container__title {
+        margin: auto auto 0 3rem;
+    }
 }
 @media (max-width: 499px) { // Mobile
-    margin: auto auto 0;
-    padding: 4rem  4rem 0;
+    .section-container__title {
+        margin: auto auto 0;
+    }
 }
