@@ -18,11 +18,10 @@
         "title": "Tic Tac Toe",
         "copy": "Challenge your friends, settle a bet, or even play for fun with Tic Tac Toe.",
         "link": "https://github.com/ADeeley/Twitch_hub",
-        "image": ""
+        "image": "tic_tac_toe_icon.png"
     }, {
         "title": "The Fisherman",
         "copy": "Collect as many fish as you can, whilst avoiding the dangerous red fish.",
-        "link": "https://github.com/ADeeley/Twitch_hub",
-        "image": ""
+        "link": "sites/the_fisherman/index.html"
     }]
 }

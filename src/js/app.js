@@ -13,7 +13,6 @@ import createNewElement from './utilities';
 function createAllElements(project, i) {
     let els = {};
     let isDouble = ((i + 1) % 3 === 0) ? ' block--double' : '';
-
     els.block = createNewElement('div', {
         'classList': 'block block--primary' + isDouble,
     });
@@ -25,7 +24,7 @@ function createAllElements(project, i) {
         'classList': 'block__copy',
         'innerHTML': project['copy'],
     });
-    els.button = createNewElement('button', {
+    els.button = createNewElement('a', {
         'classList': 'btn',
         'href': project['link'],
         'innerHTML': 'Link to project',
