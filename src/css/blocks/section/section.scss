@@ -9,6 +9,7 @@
     font-family: $serif-font;
     font-size: $display-font;
     color: $text-dark;
+    opacity: 0.8;
 }
 @media (min-width: 500px) { // Desktop
     .section-container__title {
