@@ -9,6 +9,8 @@
     font-family: $serif-font;
     font-size: $display-font;
     color: $text-dark;
+    border-left: 3px solid $highlight-dark;
+    padding-left: 10px;
     opacity: 0.8;
 }
 @media (min-width: 500px) { // Desktop

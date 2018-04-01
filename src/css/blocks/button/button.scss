@@ -1,18 +1,22 @@
 .btn {
     display: flex;
-    max-height: 50px;
-    width: 120px;
+    width: 130px;
     border: none;
-    padding: 15px;
+    padding: 13px;
     font-family: $base-font;
-    font-size: $small-font;
+    font-size: $medium-font;
     background-color: $secondary-colour;
     color: $text-light;
     font-style: normal;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid $secondary-colour;
+    text-decoration: none;
 }
 
 .btn:hover {
     background-color: $tertiary-colour;
+    border: 1px solid $secondary-colour;
     color: $text-dark;
 }
 
