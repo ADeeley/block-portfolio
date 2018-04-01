@@ -8,13 +8,11 @@ import createNewElement from './utilities';
 /**
  *  
  * @param {*} project 
- * @param {*} isDouble 
  */
-function createAllElements(project, i) {
+function createAllElements(project) {
     let els = {};
-    let isDouble = ((i + 1) % 3 === 0) ? ' block--double' : '';
     els.block = createNewElement('div', {
-        'classList': 'block block--primary' + isDouble,
+        'classList': 'block block--primary',
     });
     els.header = createNewElement('h4', {
         'classList': 'block__header',
@@ -31,7 +29,7 @@ function createAllElements(project, i) {
     });
     els.image = (project['image']) ? createNewElement('img', {
         'src': 'img/' + project['image'],
-        'classList': (isDouble) ? 'block__image__double' : 'block__image',
+        'classList': 'block__image',
     }) : null;
 
     return els;
@@ -60,7 +58,7 @@ function appendElements(els) {
 function init() {
     const projects = data['projects'];
     for (let i = 0; i < projects.length; i++) {
-        appendElements(createAllElements(projects[i], i));
+        appendElements(createAllElements(projects[i]));
     }
 }
 
