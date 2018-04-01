@@ -3,3 +3,29 @@ header {
     padding: 15rem 0;
     font-family: $serif-font;
 } 
+
+.header__name {
+    width: 200px;
+    margin: auto;
+    padding: 5px;
+    background-color: $primary-colour;
+    opacity: 0.8;
+}
+
+.header__title {
+    width: 200px;
+    margin: auto;
+    padding: 5px;
+    background-color: $tertiary-colour;
+    opacity: 0.8;
+}
+
+.header__name__copy {
+    font-family: $serif-font;
+    font-size: 2rem;
+    color: $text-light;
+}
+
+.header__title__copy {
+    font-size: 1.2rem;
+}

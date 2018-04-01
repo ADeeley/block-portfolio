@@ -35,6 +35,14 @@
     width: 10rem;
 }
 
+.block__image__double {
+    display: flex;
+    align-self: flex-end;
+    border-radius: 10%;
+    height: 10rem;
+    width: 10rem;
+}
+
 .block--primary {
     background-color: $primary-colour;
 }

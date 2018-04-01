@@ -6,6 +6,7 @@ import data from '../data/projects.json';
 import createNewElement from './utilities';
 
 /**
+ *  
  * @param {*} project 
  * @param {*} isDouble 
  */
@@ -31,13 +32,14 @@ function createAllElements(project, i) {
     });
     els.image = (project['image']) ? createNewElement('img', {
         'src': 'img/' + project['image'],
-        'classList': 'block__image',
+        'classList': (isDouble) ? 'block__image__double' : 'block__image',
     }) : null;
 
     return els;
 };
 
 /**
+ * Adds all elements to the page in the given order.
  * @param {*} els 
  */
 function appendElements(els) {
@@ -53,6 +55,9 @@ function appendElements(els) {
     container.appendChild(els.block);
 }
 
+/**
+ * Runs the essential methods to start the page
+ */
 function init() {
     const projects = data['projects'];
     for (let i = 0; i < projects.length; i++) {
