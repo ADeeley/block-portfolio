@@ -15,6 +15,7 @@
     font-size: $large-font;
     font-style: normal;
     border-bottom: 3px solid $text-light;
+    padding-bottom: 8px;
 }
 
 .block__container__main {
@@ -83,6 +84,7 @@
         grid-template-columns: auto;
         grid-auto-rows: minmax(300px, auto);
         margin: auto auto 0;
+        padding: 0 0 4rem;
     }
 
     .block--double {
