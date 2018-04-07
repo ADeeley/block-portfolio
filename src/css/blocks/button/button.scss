@@ -3,10 +3,9 @@
     grid-row: 4;
     width: 110px;
     border: none;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid $secondary-colour;
-    background-color: $secondary-colour;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: $highlight-dark;
     text-align: center;
     font-family: $base-font;
     font-size: $small-font;
@@ -16,7 +15,7 @@
 }
 
 .btn:hover {
-    background-color: $tertiary-colour;
+    background-color: $highlight-light;
     border: 1px solid $secondary-colour;
     color: $text-dark;
 }

@@ -1,17 +1,13 @@
 .footer-style {
-    @include for-phone-only {
-        margin-left: 1rem;
-    }
-    @include for-tablet-portrait-up {
-        padding: 0 4rem;
-        margin: auto auto 0;
-        max-width: 1000px;
-    }
+    background-color: $highlight-dark;
+    width: 100%;
 }
 
 .footer-text {
-    margin: 0 0 3em;
+    margin-bottom: 0px;
+    margin-left: 1em;
+    padding: 16px;
+    color: $text-light;
     font-family: $base-font;
     font-size: $small-font;
-    color: $text-dark;
 }
