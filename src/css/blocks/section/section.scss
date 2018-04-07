@@ -1,11 +1,10 @@
 .section-container {
     margin: auto 4rem 3rem;
     background-color: $highlight-dark;
-    opacity: 0.8;
 }
 
 .section-container__title {
-    margin: auto auto 0 3rem;
+    margin: auto auto 0 1rem;
     background-color: white;
     display: inline-block;
     font-family: $serif-font;
@@ -19,6 +18,5 @@
     .section-container {
         margin: auto 0 3rem;
         background-color: $highlight-dark;
-        opacity: 0.8;
     }
 }
