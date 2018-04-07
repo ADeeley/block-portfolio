@@ -1,65 +1,42 @@
 .block {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 130px 1fr 50px;
     padding: 2rem;
-    min-height: 25rem;
-    text-align: center;
-    color: $text-light;
+    border-radius: 5px;
+    color: $text-dark;
 }
 
 .block__header {
-    display: flex;
-    flex-grow: 1;
+    grid-column: 1 / span 3 ;
+    border-bottom: 1px solid $text-dark;
+    padding-bottom: 8px;
+    text-align: left;
     font-family: $serif-font;
     font-size: $large-font;
     font-style: normal;
-    border-bottom: 3px solid $text-light;
-    padding-bottom: 8px;
-}
-
-.block__container__main {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 1;
-    flex-direction: row;
 }
 
 .block__copy {
+    grid-column: 1;
+    grid-row: 2;
     text-align: left;
-    height: 200px;
     margin-top: 0;
     padding-right: 4rem;
     font-family: $base-font;
     font-size: $medium-font;
     font-style: normal;
-    color: $text-light;
+    color: $text-dark;
 }
 
 .block__image {
+    grid-column: span 2;
     border-radius: 5%;
     height: 150px;
     width: 150px;
 }
 
-.block__image__double {
-    display: flex;
-    align-self: flex-end;
-    border-radius: 5%;
-    height: 10rem;
-    width: 10rem;
-}
-
 .block--primary {
-    background-color: $primary-colour;
-}
-
-.block--secondary {
-    background-color: $secondary-colour;
-}
-
-.block--tertiary {
-    background-color: $tertiary-colour;
 }
 
 @media (min-width: 500px) { // Desktop
@@ -67,14 +44,10 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-auto-rows: minmax(300px, auto);
+        grid-gap: 20px;
         max-width: 1000px;
         margin: auto auto 0;
         padding: 0 4rem 4rem;
-    }
-
-    .block--double {
-        grid-column-start: 1;
-        grid-column-end: 3;
     }
 }
 
@@ -87,11 +60,10 @@
         padding: 0 0 4rem;
     }
 
-    .block--double {
-        display: flex;
-        min-height: 25rem;
-        text-align: center;
-        padding-top: 2rem;
-        color: white;
+    .block__image {
+        grid-column: span 2;
+        border-radius: 5%;
+        height: 100px;
+        width: 100px;
     }
 }

@@ -1,25 +1,24 @@
 .section-container {
-    max-width: 1000px;
-    margin: auto auto 0;
-    padding: 0 4rem 3rem;
+    margin: auto 4rem 3rem;
+    background-color: $highlight-dark;
+    opacity: 0.8;
 }
 
 .section-container__title {
+    margin: auto auto 0 3rem;
+    background-color: white;
     display: inline-block;
     font-family: $serif-font;
     font-size: $display-font;
     color: $text-dark;
-    border-left: 3px solid $highlight-dark;
     padding-left: 10px;
-    opacity: 0.8;
+    padding-right: 10px;
 }
-@media (min-width: 500px) { // Desktop
-    .section-container__title {
-        margin: auto auto 0 3rem;
-    }
-}
+
 @media (max-width: 499px) { // Mobile
-    .section-container__title {
-        margin: auto auto 0;
+    .section-container {
+        margin: auto 0 3rem;
+        background-color: $highlight-dark;
+        opacity: 0.8;
     }
 }

@@ -31,12 +31,6 @@ function createAllElements(project) {
         'src': 'img/' + project['image'],
         'classList': 'block__image',
     }) : null;
-    els.mainContainer = createNewElement('div', {
-        'classList': 'block__container__main',
-    });
-    els.copyContainer = createNewElement('div', {
-        'classList': 'block__container__copy',
-    });
 
     return els;
 };
@@ -50,13 +44,11 @@ function appendElements(els) {
     const block = els.block;
 
     block.appendChild(els.header);
-    els.copyContainer.appendChild(els.copy);
-    els.copyContainer.appendChild(els.button);
-    els.mainContainer.appendChild(els.copyContainer);
+    block.appendChild(els.copy);
     if (els.image) {
-        els.mainContainer.appendChild(els.image);
+        block.appendChild(els.image);
     };
-    block.appendChild(els.mainContainer);
+    block.appendChild(els.button);
     container.appendChild(els.block);
 }
 

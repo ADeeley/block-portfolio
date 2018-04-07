@@ -1,17 +1,18 @@
 .btn {
-    display: flex;
-    width: 130px;
+    grid-column: 1;
+    grid-row: 4;
+    width: 110px;
     border: none;
-    padding: 13px;
-    font-family: $base-font;
-    font-size: $medium-font;
-    background-color: $secondary-colour;
-    color: $text-light;
-    font-style: normal;
-    font-weight: 400;
-    border-radius: 8px;
+    padding: 10px;
+    border-radius: 6px;
     border: 1px solid $secondary-colour;
+    background-color: $secondary-colour;
+    text-align: center;
+    font-family: $base-font;
+    font-size: $small-font;
+    font-style: normal;
     text-decoration: none;
+    color: $text-light;
 }
 
 .btn:hover {
