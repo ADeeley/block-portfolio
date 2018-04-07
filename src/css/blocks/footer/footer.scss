@@ -1,4 +1,7 @@
 .footer-style {
+    @include for-phone-only {
+        margin-left: 1rem;
+    }
     @include for-tablet-portrait-up {
         padding: 0 4rem;
         margin: auto auto 0;
