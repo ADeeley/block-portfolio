@@ -4,12 +4,12 @@
     grid-template-rows: 130px 1fr 50px;
     padding: 2rem;
     border-radius: 5px;
-    color: $text-light;
+    color: $text-dark;
 }
 
 .block__header {
     grid-column: 1 / span 3 ;
-    border-bottom: 1px solid $text-light;
+    border-bottom: 1px solid $text-dark;
     padding-bottom: 8px;
     text-align: left;
     font-family: $serif-font;
@@ -26,7 +26,7 @@
     font-family: $base-font;
     font-size: $medium-font;
     font-style: normal;
-    color: $text-light;
+    color: $text-dark;
 }
 
 .block__image {
@@ -37,7 +37,6 @@
 }
 
 .block--primary {
-    background-color: $primary-colour;
 }
 
 @media (min-width: 500px) { // Desktop
@@ -59,5 +58,12 @@
         grid-auto-rows: minmax(300px, auto);
         margin: auto auto 0;
         padding: 0 0 4rem;
+    }
+
+    .block__image {
+        grid-column: span 2;
+        border-radius: 5%;
+        height: 100px;
+        width: 100px;
     }
 }
