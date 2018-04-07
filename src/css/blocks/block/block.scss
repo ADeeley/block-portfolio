@@ -18,14 +18,14 @@
     grid-template-columns: repeat(3 1fr);
     grid-template-rows: 130px 1fr 50px;
     padding: 2rem;
-    border-radius: 5px;
     color: $text-dark;
+    background-color: $tertiary-colour;
 }
 
 .block__header {
     grid-column: 1 / span 3 ;
-    border-bottom: 1px solid $text-dark;
-    padding-bottom: 8px;
+    padding-left: 8px;
+    border-left: 5px solid $highlight-dark;
     text-align: left;
     font-family: $serif-font;
     font-size: $large-font;
