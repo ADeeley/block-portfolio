@@ -23,6 +23,8 @@ input[type=submit] {
 .email-box-container {
     background-color: #f2f2f2;
     padding: 20px;
+    max-width: 1000px;
+    margin: auto;
     text-align: left;
     font-family: $base-font;
     font-size: $small-font;

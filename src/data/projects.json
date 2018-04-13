@@ -2,12 +2,12 @@
     "projects": [{
         "title": "Recipe Book",
         "copy": "Store your recipies online with this React app.",
-        "link": "https://github.com/ADeeley/Twitch_hub",
+        "link": "https://lucid-mccarthy-56edd1.bitballoon.com/",
         "image": ""
     }, {
         "title": "Twitch Hub",
         "copy": "Keeps track of your twitch subscriptions and see who is currently streaming.",
-        "link": "https://github.com/ADeeley/Twitch_hub",
+        "link": "https://publisher-provision-63421.bitballoon.com/",
         "image": "twitch_hub_logo.png"
     }, {
         "title": "Simon Game",
